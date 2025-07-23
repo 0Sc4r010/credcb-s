@@ -2,10 +2,10 @@ import tkinter as tk
 import tkinter as ttk
 from tkinter import simpledialog
 from tkcalendar import DateEntry
+from domain.facturas import insertar_encabezado_fc
 from utils.cnxapi import facturas_eds
 import logging
-
-from db import insertar_sales
+from db.querys import insertar_sales,view_invoice_data_head
 # import requests
 logging.basicConfig(
     level=logging.INFO,
@@ -15,8 +15,21 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+
+def  procesa_fac():
+    invoice_data = view_invoice_data_head("H")
+    if not invoice_data:
+            logger.warning("No hay facturas para procesar.")
+            return
+    for row in invoice_data:
+        insertar_encabezado_fc(row,'E')
+        #   insertar_encabezado_fc(row, proceso_global)
+
+
+
+
 # funcion para actualizar clientes 
-def genera_fac(Fec_ini, Fec_fin):
+def impdata_api(Fec_ini, Fec_fin):
     branch_ids = [2156,2157] 
    
     for  branch_id in branch_ids:  
@@ -35,6 +48,7 @@ def genera_fac(Fec_ini, Fec_fin):
                 customer  = fe_sales.get("customer", [])
                 sales =  fe_sales.get("sales", [])
                 insertar_sales(fe_sales,customer,sales)
+                
                     
                 print(fe_sales.get("bill_number"))   #insert_data_int(client, branch_id)
                 
@@ -52,7 +66,9 @@ def ventana_fechas():
         fecha_inicio = date_entry_inicio.get()
         fecha_final = date_entry_final.get()
         top.destroy()
-        genera_fac(fecha_inicio, fecha_final)
+        impdata_api(fecha_inicio, fecha_final)
+        procesa_fac()
+        
 
     top = tk.Toplevel()
     top.title("Seleccionar Fechas")
@@ -82,3 +98,8 @@ barra_menu.add_cascade(label="Procesos", menu=menu_procesos)
 # Asigna el menu a la ventana 
 ventana.config(menu=barra_menu)
 ventana.mainloop()
+
+
+    
+    
+        

@@ -1,0 +1,35 @@
+2025-07-22 15:15:53 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-22 15:16:01 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-22 16:34:44 - WARNING - No hay facturas para procesar.
+2025-07-22 16:35:58 - WARNING - No hay datos de ventas para la Estación 2156.
+2025-07-22 16:36:02 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-22 16:36:22 - WARNING - No hay facturas para procesar.
+2025-07-22 16:39:52 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-22 16:39:58 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-22 16:52:11 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-22 16:52:19 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-22 16:53:37 - WARNING - No hay facturas para procesar.
+2025-07-23 08:01:25 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-23 08:01:32 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-23 08:08:55 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-23 08:09:01 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-23 08:31:05 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-23 08:31:12 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-23 09:44:11 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-23 09:44:19 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-23 09:58:17 - INFO - Error crítico: Factura No procesada: 5910
+NoneType: None
+2025-07-23 16:39:40 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-23 16:39:47 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-23 16:42:46 - INFO - Error crítico: Factura No procesada: 5910
+NoneType: None
+2025-07-23 16:44:11 - INFO - Error crítico: Factura No procesada: 5911
+NoneType: None
+2025-07-23 16:59:31 - INFO - Error crítico: Factura No procesada: 5912
+NoneType: None
+2025-07-23 17:04:55 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR> Cuenta Contable para Producto : 211010006 y Código de Destino 40 no definida. Verifique Por Favor.</TXTERROR> <FAC_CONT>0</FAC_CONT> <FAC_NUME>0</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-23 17:18:37 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR> Cuenta Contable para Producto : 211010006 y Código de Destino 40 no definida. Verifique Por Favor.</TXTERROR> <FAC_CONT>0</FAC_CONT> <FAC_NUME>0</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-23 17:19:11 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR> Cliente 9017867791 inválido. Verifique por favor.</TXTERROR> <FAC_CONT>0</FAC_CONT> <FAC_NUME>0</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None

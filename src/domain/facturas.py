@@ -1,9 +1,9 @@
 import sys
-from utilidades import truncar_con_regla_especial,extraer_fac_cont
+from utils.utilidades import truncar_con_regla_especial,extraer_fac_cont
 from requests import Session
 from config import wsdl_fac
 from db.querys import  consultapagos, find_pettycash, updated_status, view_invoice_data_head
-from soap_client import get_soap_client
+from utils.soap_client import get_soap_client
 import logging
 
 # Clase para instanciar la clase 

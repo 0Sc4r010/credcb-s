@@ -10,8 +10,8 @@ DB_PASSWORD = os.getenv("DB_PASSWORD", "Gav:[Z3A@X7") # "Gav:[Z3A@X7"
 DB_NAME = os.getenv("DB_NAME", "seven") # seven_pruebas
 
 
-wsdl_fac = 'http://172.18.200.16/Seven/Webservicesoap/UFaFactu/SFaFactu.asmx?wsdl'
-wsdl_ews = 'http://172.18.200.16/SEVEN/WEBSERVICESOPHELIA/SIeWssec.asmx?wsdl'
-wsdl_rec = 'http://172.18.200.16/SEVEN/WEBSERVICESOPHELIA/WTsRecaj.asmx?wsdl'
-wsdl_acc = 'http://172.18.200.16/SEVEN/WEBSERVICESOPHELIA/SCnMcont.asmx?wsdl'
-wsdl_inv = 'http://172.18.200.16/SEVEN/WEBSERVICESOPHELIA/SInMinve.asmx?wsdl'
+wsdl_fac = 'http://172.18.200.72/Seven/Webservicesoap/UFaFactu/SFaFactu.asmx?wsdl'
+wsdl_ews = 'http://172.18.200.72/SEVEN/WEBSERVICESOPHELIA/SIeWssec.asmx?wsdl'
+wsdl_rec = 'http://172.18.200.72/SEVEN/WEBSERVICESOPHELIA/WTsRecaj.asmx?wsdl'
+wsdl_acc = 'http://172.18.200.72/SEVEN/WEBSERVICESOPHELIA/SCnMcont.asmx?wsdl'
+wsdl_inv = 'http://172.18.200.72/SEVEN/WEBSERVICESOPHELIA/SInMinve.asmx?wsdl'
