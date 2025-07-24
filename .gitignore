@@ -1,0 +1,55 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment folders
+env/
+
+# VSCode settings
+.vscode/
+
+# PyCharm/JetBrains
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Log files and local databases
+*.log
+*.sqlite3
+*.db
+
+# Python egg info
+*.egg-info/
+*.egg
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.so
+*.c
+*.cpp
+
+# Unit test cache
+.cache/
+.nox/
+.pytest_cache/
+
+# MyPy type checker
+.mypy_cache/
+
+# Coverage reports
+.coverage
+htmlcov/
+coverage.xml
+
+# Profiling data
+.prof
+.profraw
+
+# Others
+*.bak
+*.tmp
