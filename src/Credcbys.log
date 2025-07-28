@@ -1,0 +1,317 @@
+2025-07-22 15:15:53 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-22 15:16:01 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-22 16:34:44 - WARNING - No hay facturas para procesar.
+2025-07-22 16:35:58 - WARNING - No hay datos de ventas para la Estación 2156.
+2025-07-22 16:36:02 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-22 16:36:22 - WARNING - No hay facturas para procesar.
+2025-07-22 16:39:52 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-22 16:39:58 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-22 16:52:11 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-22 16:52:19 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-22 16:53:37 - WARNING - No hay facturas para procesar.
+2025-07-23 08:01:25 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-23 08:01:32 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-23 08:08:55 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-23 08:09:01 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-23 08:31:05 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-23 08:31:12 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-23 09:44:11 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-23 09:44:19 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-23 09:58:17 - INFO - Error crítico: Factura No procesada: 5910
+NoneType: None
+2025-07-23 16:39:40 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-23 16:39:47 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-23 16:42:46 - INFO - Error crítico: Factura No procesada: 5910
+NoneType: None
+2025-07-23 16:44:11 - INFO - Error crítico: Factura No procesada: 5911
+NoneType: None
+2025-07-23 16:59:31 - INFO - Error crítico: Factura No procesada: 5912
+NoneType: None
+2025-07-23 17:04:55 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR> Cuenta Contable para Producto : 211010006 y Código de Destino 40 no definida. Verifique Por Favor.</TXTERROR> <FAC_CONT>0</FAC_CONT> <FAC_NUME>0</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-23 17:18:37 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR> Cuenta Contable para Producto : 211010006 y Código de Destino 40 no definida. Verifique Por Favor.</TXTERROR> <FAC_CONT>0</FAC_CONT> <FAC_NUME>0</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-23 17:19:11 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR> Cliente 9017867791 inválido. Verifique por favor.</TXTERROR> <FAC_CONT>0</FAC_CONT> <FAC_NUME>0</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 10:40:18 - ERROR - Error inesperado al procesar ventas en la sucursal 2156: cannot access local variable 'cli' where it is not associated with a value.
+Traceback (most recent call last):
+  File "D:\credcb-s\src\main.py", line 50, in impdata_api
+    insertar_sales(fe_sales,customer,sales)
+  File "D:\credcb-s\src\db\querys.py", line 15, in insertar_sales
+    cli = cli[:-1] if cliente.get('id_type','') == 31 else cli
+                                                         ^^^
+UnboundLocalError: cannot access local variable 'cli' where it is not associated with a value
+2025-07-24 10:40:26 - ERROR - Error inesperado al procesar ventas en la sucursal 2157: cannot access local variable 'cli' where it is not associated with a value.
+Traceback (most recent call last):
+  File "D:\credcb-s\src\main.py", line 50, in impdata_api
+    insertar_sales(fe_sales,customer,sales)
+  File "D:\credcb-s\src\db\querys.py", line 15, in insertar_sales
+    cli = cli[:-1] if cliente.get('id_type','') == 31 else cli
+                                                         ^^^
+UnboundLocalError: cannot access local variable 'cli' where it is not associated with a value
+2025-07-24 10:44:16 - ERROR - Error inesperado al procesar ventas en la sucursal 2156: cannot access local variable 'cli' where it is not associated with a value.
+Traceback (most recent call last):
+  File "D:\credcb-s\src\main.py", line 50, in impdata_api
+    insertar_sales(fe_sales,customer,sales)
+  File "D:\credcb-s\src\db\querys.py", line 15, in insertar_sales
+    cli = cli[:-1] if cliente.get('id_type','') == 31 else cli
+                                                         ^^^
+UnboundLocalError: cannot access local variable 'cli' where it is not associated with a value
+2025-07-24 10:45:34 - ERROR - Error inesperado al procesar ventas en la sucursal 2157: cannot access local variable 'cli' where it is not associated with a value.
+Traceback (most recent call last):
+  File "D:\credcb-s\src\main.py", line 50, in impdata_api
+    insertar_sales(fe_sales,customer,sales)
+  File "D:\credcb-s\src\db\querys.py", line 15, in insertar_sales
+    cli = cli[:-1] if cliente.get('id_type','') == 31 else cli
+                                                         ^^^
+UnboundLocalError: cannot access local variable 'cli' where it is not associated with a value
+2025-07-24 10:45:37 - WARNING - No hay facturas para procesar.
+2025-07-24 14:07:46 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-24 14:07:55 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-24 14:14:57 - ERROR - Error inesperado al procesar ventas en la sucursal 2156: cannot access local variable 'Cli' where it is not associated with a value.
+Traceback (most recent call last):
+  File "D:\credcb-s\src\main.py", line 50, in impdata_api
+    insertar_sales(fe_sales,customer,sales)
+  File "D:\credcb-s\src\db\querys.py", line 34, in insertar_sales
+    p_cli=Cli,
+          ^^^
+UnboundLocalError: cannot access local variable 'Cli' where it is not associated with a value
+2025-07-24 14:21:11 - ERROR - Error inesperado al procesar ventas en la sucursal 2157: cannot access local variable 'Cli' where it is not associated with a value.
+Traceback (most recent call last):
+  File "D:\credcb-s\src\main.py", line 50, in impdata_api
+    insertar_sales(fe_sales,customer,sales)
+  File "D:\credcb-s\src\db\querys.py", line 34, in insertar_sales
+    p_cli=Cli,
+          ^^^
+UnboundLocalError: cannot access local variable 'Cli' where it is not associated with a value
+2025-07-24 14:21:23 - WARNING - No hay facturas para procesar.
+2025-07-24 14:23:35 - ERROR - Error inesperado al procesar ventas en la sucursal 2156: cannot access local variable 'Cli' where it is not associated with a value.
+Traceback (most recent call last):
+  File "D:\credcb-s\src\main.py", line 50, in impdata_api
+    insertar_sales(fe_sales,customer,sales)
+  File "D:\credcb-s\src\db\querys.py", line 35, in insertar_sales
+    p_cli=Cli,
+          ^^^
+UnboundLocalError: cannot access local variable 'Cli' where it is not associated with a value
+2025-07-24 14:24:12 - ERROR - Error inesperado al procesar ventas en la sucursal 2157: cannot access local variable 'Cli' where it is not associated with a value.
+Traceback (most recent call last):
+  File "D:\credcb-s\src\main.py", line 50, in impdata_api
+    insertar_sales(fe_sales,customer,sales)
+  File "D:\credcb-s\src\db\querys.py", line 35, in insertar_sales
+    p_cli=Cli,
+          ^^^
+UnboundLocalError: cannot access local variable 'Cli' where it is not associated with a value
+2025-07-24 14:25:20 - ERROR - Error inesperado al procesar ventas en la sucursal 2156: cannot access local variable 'Cli' where it is not associated with a value.
+Traceback (most recent call last):
+  File "D:\credcb-s\src\main.py", line 50, in impdata_api
+    insertar_sales(fe_sales,customer,sales)
+  File "D:\credcb-s\src\db\querys.py", line 36, in insertar_sales
+    p_cli=Cli,
+          ^^^
+UnboundLocalError: cannot access local variable 'Cli' where it is not associated with a value
+2025-07-24 14:25:27 - ERROR - Error inesperado al procesar ventas en la sucursal 2157: cannot access local variable 'Cli' where it is not associated with a value.
+Traceback (most recent call last):
+  File "D:\credcb-s\src\main.py", line 50, in impdata_api
+    insertar_sales(fe_sales,customer,sales)
+  File "D:\credcb-s\src\db\querys.py", line 36, in insertar_sales
+    p_cli=Cli,
+          ^^^
+UnboundLocalError: cannot access local variable 'Cli' where it is not associated with a value
+2025-07-24 14:27:25 - ERROR - Error inesperado al procesar ventas en la sucursal 2156: cannot access local variable 'Cli' where it is not associated with a value.
+Traceback (most recent call last):
+  File "D:\credcb-s\src\main.py", line 50, in impdata_api
+    insertar_sales(fe_sales,customer,sales)
+  File "D:\credcb-s\src\db\querys.py", line 36, in insertar_sales
+    p_cli=Cli,
+          ^^^
+UnboundLocalError: cannot access local variable 'Cli' where it is not associated with a value
+2025-07-24 14:27:32 - ERROR - Error inesperado al procesar ventas en la sucursal 2157: cannot access local variable 'Cli' where it is not associated with a value.
+Traceback (most recent call last):
+  File "D:\credcb-s\src\main.py", line 50, in impdata_api
+    insertar_sales(fe_sales,customer,sales)
+  File "D:\credcb-s\src\db\querys.py", line 36, in insertar_sales
+    p_cli=Cli,
+          ^^^
+UnboundLocalError: cannot access local variable 'Cli' where it is not associated with a value
+2025-07-24 14:30:12 - ERROR - Error inesperado al procesar ventas en la sucursal 2156: cannot access local variable 'Cli' where it is not associated with a value.
+Traceback (most recent call last):
+  File "D:\credcb-s\src\main.py", line 50, in impdata_api
+    insertar_sales(fe_sales,customer,sales)
+  File "D:\credcb-s\src\db\querys.py", line 36, in insertar_sales
+    p_cli=Cli,
+          ^^^
+UnboundLocalError: cannot access local variable 'Cli' where it is not associated with a value
+2025-07-24 14:31:37 - ERROR - Error inesperado al procesar ventas en la sucursal 2156: cannot access local variable 'Cli' where it is not associated with a value.
+Traceback (most recent call last):
+  File "D:\credcb-s\src\main.py", line 50, in impdata_api
+    insertar_sales(fe_sales,customer,sales)
+  File "D:\credcb-s\src\db\querys.py", line 36, in insertar_sales
+    p_cli=Cli,
+          ^^^
+UnboundLocalError: cannot access local variable 'Cli' where it is not associated with a value
+2025-07-24 14:34:56 - ERROR - Error inesperado al procesar ventas en la sucursal 2157: cannot access local variable 'Cli' where it is not associated with a value.
+Traceback (most recent call last):
+  File "D:\credcb-s\src\main.py", line 50, in impdata_api
+    insertar_sales(fe_sales,customer,sales)
+  File "D:\credcb-s\src\db\querys.py", line 36, in insertar_sales
+    p_cli=Cli,
+          ^^^
+UnboundLocalError: cannot access local variable 'Cli' where it is not associated with a value
+2025-07-24 14:42:01 - ERROR - Error inesperado al procesar ventas en la sucursal 2156: cannot access local variable 'Cli' where it is not associated with a value.
+Traceback (most recent call last):
+  File "D:\credcb-s\src\main.py", line 50, in impdata_api
+    insertar_sales(fe_sales,customer,sales)
+  File "D:\credcb-s\src\db\querys.py", line 35, in insertar_sales
+    p_cli=Cli,
+          ^^^
+UnboundLocalError: cannot access local variable 'Cli' where it is not associated with a value
+2025-07-24 14:42:25 - ERROR - Error inesperado al procesar ventas en la sucursal 2157: cannot access local variable 'Cli' where it is not associated with a value.
+Traceback (most recent call last):
+  File "D:\credcb-s\src\main.py", line 50, in impdata_api
+    insertar_sales(fe_sales,customer,sales)
+  File "D:\credcb-s\src\db\querys.py", line 35, in insertar_sales
+    p_cli=Cli,
+          ^^^
+UnboundLocalError: cannot access local variable 'Cli' where it is not associated with a value
+2025-07-24 14:46:30 - ERROR - Error inesperado al procesar ventas en la sucursal 2156: cannot access local variable 'Cli' where it is not associated with a value.
+Traceback (most recent call last):
+  File "D:\credcb-s\src\main.py", line 50, in impdata_api
+    insertar_sales(fe_sales,customer,sales)
+  File "D:\credcb-s\src\db\querys.py", line 35, in insertar_sales
+    p_cli=Cli,
+          ^^^
+UnboundLocalError: cannot access local variable 'Cli' where it is not associated with a value
+2025-07-24 14:49:26 - ERROR - Error inesperado al procesar ventas en la sucursal 2157: cannot access local variable 'Cli' where it is not associated with a value.
+Traceback (most recent call last):
+  File "D:\credcb-s\src\main.py", line 50, in impdata_api
+    insertar_sales(fe_sales,customer,sales)
+  File "D:\credcb-s\src\db\querys.py", line 35, in insertar_sales
+    p_cli=Cli,
+          ^^^
+UnboundLocalError: cannot access local variable 'Cli' where it is not associated with a value
+2025-07-24 14:58:13 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-24 14:58:21 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-24 15:03:58 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-24 15:04:05 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-24 15:27:35 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-24 15:27:43 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-24 15:37:07 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-24 15:37:15 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-24 15:48:25 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 104
+[211010006]
+</TXTERROR> <FAC_CONT>4550001</FAC_CONT> <FAC_NUME>6</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:12:15 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 100
+[211010006]
+</TXTERROR> <FAC_CONT>4551001</FAC_CONT> <FAC_NUME>7</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:32:55 - INFO - Procesamiento de ventas completado para la sucursal 2156.
+2025-07-24 16:33:04 - INFO - Procesamiento de ventas completado para la sucursal 2157.
+2025-07-24 16:34:57 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4556001</FAC_CONT> <FAC_NUME>12</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:34:58 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4557001</FAC_CONT> <FAC_NUME>13</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:35:04 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR> Cliente no se encuentra activo </TXTERROR> <FAC_CONT>0</FAC_CONT> <FAC_NUME>0</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:35:19 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4570001</FAC_CONT> <FAC_NUME>26</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:35:23 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4572001</FAC_CONT> <FAC_NUME>28</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:35:27 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4575001</FAC_CONT> <FAC_NUME>31</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:35:40 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4583001</FAC_CONT> <FAC_NUME>39</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:35:41 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4584001</FAC_CONT> <FAC_NUME>40</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:35:44 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 103
+[211010006]
+</TXTERROR> <FAC_CONT>4586001</FAC_CONT> <FAC_NUME>42</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:35:45 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4587001</FAC_CONT> <FAC_NUME>43</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:35:46 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4588001</FAC_CONT> <FAC_NUME>44</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:35:54 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4593001</FAC_CONT> <FAC_NUME>49</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:35:58 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4596001</FAC_CONT> <FAC_NUME>52</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:35:59 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4597001</FAC_CONT> <FAC_NUME>53</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:36:18 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR> Cliente no se encuentra activo </TXTERROR> <FAC_CONT>0</FAC_CONT> <FAC_NUME>0</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:36:20 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR> Cliente no se encuentra activo </TXTERROR> <FAC_CONT>0</FAC_CONT> <FAC_NUME>0</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:36:25 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4613001</FAC_CONT> <FAC_NUME>69</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:36:29 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4616001</FAC_CONT> <FAC_NUME>72</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:36:36 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4621001</FAC_CONT> <FAC_NUME>77</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:36:44 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4627001</FAC_CONT> <FAC_NUME>83</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:36:47 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4630001</FAC_CONT> <FAC_NUME>86</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:36:56 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4632001</FAC_CONT> <FAC_NUME>88</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:41:14 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR> Cliente no se encuentra activo </TXTERROR> <FAC_CONT>0</FAC_CONT> <FAC_NUME>0</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:41:20 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4645001</FAC_CONT> <FAC_NUME>101</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:41:33 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4652001</FAC_CONT> <FAC_NUME>108</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:41:40 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4656001</FAC_CONT> <FAC_NUME>112</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:41:45 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4660001</FAC_CONT> <FAC_NUME>116</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:41:49 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4663001</FAC_CONT> <FAC_NUME>119</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None
+2025-07-24 16:41:54 - ERROR - Error al insertar factura: <NewDataSet> <FA_FACTU> <RETORNO>1</RETORNO> <TXTERROR>Los Siguientes Productos No pertenecen a la lista 102
+[211010006]
+</TXTERROR> <FAC_CONT>4667001</FAC_CONT> <FAC_NUME>123</FAC_NUME> </FA_FACTU> </NewDataSet>
+NoneType: None

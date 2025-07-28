@@ -1,9 +1,9 @@
 import sys
-from utilidades import truncar_con_regla_especial,extraer_fac_cont
+from utils.utilidades import truncar_con_regla_especial,extraer_fac_cont
 from requests import Session
 from config import wsdl_fac
 from db.querys import  consultapagos, find_pettycash, updated_status, view_invoice_data_head
-from soap_client import get_soap_client
+from utils.soap_client import get_soap_client
 import logging
 
 # Clase para instanciar la clase 
@@ -120,7 +120,7 @@ def insertar_encabezado_fc(row,proceso_global):
             factura = {
                 'Emp_codi': row['id_proyecto'],
                 'Top_codi': row['operacion'],
-                'Fac_nume': 0,
+                'Fac_nume': row['fac_nume'],
                 'Fac_fech': row['fac_fech'],
                 'Fac_desc': row['des_hfac'] + '-' + str(row['fac_nume']),
                 'Arb_csuc': row['sucursal'],
