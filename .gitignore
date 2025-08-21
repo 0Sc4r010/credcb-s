@@ -1,0 +1,15 @@
+# Ignorar archivos compilados de Python
+*.pyc
+__pycache__/
+
+# Entorno virtual
+env/
+ENV/
+.venv/
+.ENV/
+
+# Configuraciones de VSCode
+.vscode/
+
+# Logs
+*.log

@@ -21,7 +21,6 @@ def insertar_sales(factura,cliente,ventas):
     Cla = cliente.get("address",'') 
     Clp = cliente.get("phone",'') 
     Eml = cliente.get('email','') 
-    Tot = factura.get('total', '')
     Id  = factura.get('id', '')
     
     for payment in ventas:
@@ -39,7 +38,7 @@ def insertar_sales(factura,cliente,ventas):
                     p_cla=Cla,
                     p_clp=Clp,
                     p_eml=Eml,
-                    p_tot=Tot,
+                    p_tot=payment_.get("value", ""),
                     p_des=payment_.get("name", ""),
                     p_apb=payment_.get("code", ""),
                     p_id=Id) 
@@ -112,7 +111,7 @@ def find_pettycash(empresa,operacion):
     if not result:
         return None
     else: 
-        return result[0]['caj_codi']    
+        return result[0]['caj_codi']     # type: ignore
     
     
 

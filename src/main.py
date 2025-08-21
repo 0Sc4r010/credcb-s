@@ -139,8 +139,9 @@ def main():
     menu_procesos = tk.Menu(barra_menu, tearoff=0)
     menu_procesos.add_command(label='Procesar Facturas', command=lambda: ventana_fechas(logger))
     menu_procesos.add_command(label='Reprocesar Novedades', command=lambda: reprocesos(logger))
+    menu_procesos.add_command(label='Excluir Documentos ', command=lambda: reprocesos(logger))
     barra_menu.add_cascade(label="Procesar Facturas", menu=menu_procesos)
-    barra_menu.add_cascade(label="Excluir", menu=menu_procesos)
+   
     ventana.config(menu=barra_menu)
 
     logger.info("Aplicación iniciada correctamente.")
