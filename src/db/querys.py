@@ -52,7 +52,7 @@ def insertar_tabla(p_eds, p_fac, p_pfr, p_fec, p_cli, p_clf, p_cll, p_cla, p_clp
             @cli_name = %s, @cli_lasn = %s, @cli_addr = %s, @cli_phon = %s, 
             @fac_feta = %s, @fac_tipo = %s, @fac_feci = %s, @fac_fecf = %s, 
             @fac_cref = %s, @dfa_cant = %s, @dfa_valo = %s, @dfa_pvde = %s, 
-            @eml_clte = %s, @arb_codi = %s, @payment = %s, @fpd_codi = %s,
+            @eml_clte = %s, @est_proc = %s, @arb_codi = %s, @payment = %s, @fpd_codi = %s,
             @dfa_impt = %s, @apb_code = %s, @id = %s
     """
 
@@ -78,6 +78,7 @@ def insertar_tabla(p_eds, p_fac, p_pfr, p_fec, p_cli, p_clf, p_cll, p_cla, p_clp
         p_tot,         # dfa_valo
         0,             # dfa_pvde
         p_eml,         # eml_clte
+        2,             # est_proc
         '10810001',    # arb_codi
         p_des,         # payment (nombre)
         p_apb,         # fpd_codi (código)
@@ -118,10 +119,9 @@ def find_pettycash(empresa,operacion):
 def  updated_status(proceso,estado,factura, empresa):
    sentenc = """update int_dataeds set Est_proc = %s where fac_nume = %s and emp_codi = %s"""
    params = (estado,factura, empresa)
-   if proceso == 'T':        
-        return execute_query(sentenc.replace("int_dataeds", "int_datatickets"),params,fetch=False)
-   else:
-        return execute_query(sentenc,params,fetch=False)       
+   if estado == 0:         
+         return execute_query(sentenc,params,fetch=False)       
+       
     
 def clean_data(proceso):
         sentenc = """DELETE FROM int_dataeds where est_proc = %s"""

@@ -4,10 +4,10 @@ client_id = "1KFFYcePjAU8wjEfwNYSMJ5cp"
 client_secret = "SbWjFqQ512c3tYHa3HTcVMGiUMKGeFAy0tbx87qt"
 scope = "dominus"
 
-DB_SERVER = os.getenv("DB_SERVER", "172.18.200.14:1433") # 172.18.200.14\pruebas172.18.200.14:1433
+DB_SERVER = os.getenv("DB_SERVER", "172.18.200.14\pruebas") # 172.18.200.14\pruebas172.18.200.14:1433
 DB_USER = os.getenv("DB_USER", "seven")
-DB_PASSWORD = os.getenv("DB_PASSWORD", "Gav:[Z3A@X7") # "Gav:[Z3A@X7"
-DB_NAME = os.getenv("DB_NAME", "seven") # seven_pruebas
+DB_PASSWORD = os.getenv("DB_PASSWORD", "seven") # "Gav:[Z3A@X7"
+DB_NAME = os.getenv("DB_NAME", "seven_qa") # seven_pruebas
 
 
 wsdl_fac = 'http://172.18.200.72/Seven/Webservicesoap/UFaFactu/SFaFactu.asmx?wsdl'

@@ -40,7 +40,7 @@ def limpiar_text_area():
 
 
 def procesa_fac(logger):
-    invoice_data = view_invoice_data_head("H")
+    invoice_data = view_invoice_data_head("C")
     if not invoice_data:
         logger.warning("No hay facturas para procesar.")
         return
