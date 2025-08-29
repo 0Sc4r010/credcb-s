@@ -1,9 +1,11 @@
 import pymssql
 import logging
-from config import DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME
+from config import DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME,ULTIMOS_DATOS
 from db.connection import execute_query
 # Configuración del logging
 logger = logging.getLogger(__name__)
+
+
 
 
 def insertar_sales(factura,cliente,ventas):
@@ -21,13 +23,10 @@ def insertar_sales(factura,cliente,ventas):
     Cla = cliente.get("address",'') 
     Clp = cliente.get("phone",'') 
     Eml = cliente.get('email','') 
+    Tot = factura.get("total", 0)
     Id  = factura.get('id', '')
-    
-    for payment in ventas:
-        _payment =  payment.get("payment", [])
-        for payment_ in _payment:
-            if payment_.get("desc",'') == 'Credito':
-               insertar_tabla(
+    ULTIMOS_DATOS.append({"branch_id": Eds,"fecha": Fec,"factura": Fac,"cliente_Apl": Cll,"cliente_Nmb": Clf,"sales": Tot, "desc": 'Credito',})
+    insertar_tabla(
                     p_eds=Eds,
                     p_fac=Fac,
                     p_pfr=Pfr,
@@ -38,10 +37,12 @@ def insertar_sales(factura,cliente,ventas):
                     p_cla=Cla,
                     p_clp=Clp,
                     p_eml=Eml,
-                    p_tot=payment_.get("value", ""),
-                    p_des=payment_.get("name", ""),
-                    p_apb=payment_.get("code", ""),
-                    p_id=Id) 
+                    p_tot=Tot,
+                    p_des='Credito',
+                    p_apb=111,
+                    p_id=Id
+                    ) 
+                    
 
 
 def insertar_tabla(p_eds, p_fac, p_pfr, p_fec, p_cli, p_clf, p_cll, p_cla, p_clp, p_eml, p_tot, p_des, p_apb, p_id):
@@ -64,7 +65,7 @@ def insertar_tabla(p_eds, p_fac, p_pfr, p_fec, p_cli, p_clf, p_cll, p_cla, p_clp
         p_cli,         # cli_coda
         2156,          # id_origen
         '211010006',   # pro_codi (valor fijo)
-        'Crdto CB&S',      # dfa_desc (puede ajustarse)
+        'Crdto CB&S',  # dfa_desc (puede ajustarse)
         p_clf,         # cli_name
         p_cll,         # cli_lasn
         p_cla,         # cli_addr
@@ -124,7 +125,7 @@ def  updated_status(proceso,estado,factura, empresa):
        
     
 def clean_data(proceso):
-        sentenc = """DELETE FROM int_dataeds where est_proc = %s"""
+        sentenc = """DELETE FROM int_dataeds where est_proc in (%s,0)"""
         params = (proceso,)
         # Ejecutar la consulta
         result = execute_query(sentenc, params, fetch=False)
